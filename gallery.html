@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>갤러리 | 노팅힐(Notting hill)</title>
+  <link rel="shortcut icon" href="./images/favicon.png">
+  <!-- 웹 폰트 nNoto Sans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sub.css">
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</head>
+<body id="gallery">
+  <header id="main_menu">    
+    <button class="btn-toggle">
+      <img src="./images/btn-toggle.svg" alt="toggle">
+    </button>
+    <h2>갤러리</h2>
+  </header>
+
+  <nav id="gnb">
+    <ul>
+      <li><a href="./">홈</a></li>
+      <li><a href="./video.html">비디오</a></li>
+      <li><a href="./index.html?synop=1">시놉시스</a></li>
+      <li class="active"><a href="./gallery.html">갤러리</a></li>
+    </ul>
+    <button class="btn-close">
+      <img src="./images/btn-close.svg" alt="닫기 버튼">
+    </button>
+  </nav>
+
+    <section id="main">
+     <figure>
+         <img src="./images/still05.jpg" alt="01">
+     </figure>
+     <ul class="thumb">
+         <li><a href="#"><img src="./images/still01.jpg" alt="1"></a></li>
+         <li><a href="#"><img src="./images/still02.jpg" alt="2"></a></li>
+         <li><a href="#"><img src="./images/still03.jpg" alt="3"></a></li>
+         <li class="clear"><a href="#"><img src="./images/still04.jpg" alt="4"></a></li>
+         <li><a href="#"><img src="./images/still05.jpg" alt="5"></a></li>
+         <li><a href="#"><img src="./images/still06.jpg" alt="6"></a></li>
+     </ul>
+    </section>
+
+  <footer id="main_footer">      
+    <p>
+      감독 : 로저 미셀 | 제작 : 덩컨 켄워시 | 배급사 : MCA-유니버셜  | 등급 : 12세 이상 관람
+    </p>
+  </footer>
+</body>
+</html>

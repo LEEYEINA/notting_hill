@@ -1,0 +1,132 @@
+/* sub.css */
+
+/* 배경 초기화 */
+body {
+  background: #000;
+}
+
+#video #main_menu {
+  width: 100%;
+  height: 80px;
+}
+
+#video #main {
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+#video #main iframe {
+  width: 100%;
+  /* header, footer 공간을 제외한 영상 영역 */
+  height: calc(100vh - 160px);
+  background: #abc;
+  /* border: 2px solid green; */
+  display: block;
+}
+
+#main_footer {
+  clear: both;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 80px;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  font-size: 16px;
+  font-weight: 400;
+  /* border: 1px solid yellow; */
+}
+
+
+/* 갤러리 */
+#gallery #main_menu {
+  width: 100%;
+  height: 15%;
+  /* outline: 1px solid red; */
+}
+#gallery #main_menu h2 {
+  text-align: center;
+  display: block;
+  /* outline: 1px solid red; */
+}
+#gallery {
+  position: relative;
+  width: 100%;
+  background: #A9BBA5;
+  /* height: 100px;   */
+  /* outline: 1px solid black; */
+}
+
+#gallery #main {
+  margin: 0 auto;
+  /* outline: 1px solid yellow; */
+}
+#gallery #main figure {
+  max-width: 1000px;
+  /* outline: 2px solid red; */
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#gallery #main figure img {
+  width: 100%;
+}
+
+#gallery #main ul {
+  /* outline: 2px solid green; */
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#gallery #main ul li {
+  width: calc(100% / 6);
+  float: left;
+  /* outline: 2px solid red; */
+  /* border: 1px solid #707070; */  
+  opacity: 0.5;
+  overflow: hidden;
+  
+}
+
+#gallery #main ul li:hover {
+  opacity: 1;
+  /* border: 2px solid #fff; */
+}
+
+#gallery #main ul li a img{
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+#gallery #main_footer {
+  width: 100%;
+  height: 15%;
+  background: #A9BBA5;
+}
+
+/* 갤러리 모바일 목록 구성 */
+@media screen and (max-width: 500px) {
+  .clear { clear: both;}
+  #gallery #main ul.thumb {
+    overflow: hidden;
+    width: 100%;
+    margin-left: 20px;
+  }
+  #gallery #main ul.thumb li {
+    width: calc((100% - 40px) / 3);
+    float: left;
+    /* outline: 2px solid red; */
+    /* border: 1px solid #707070; */
+    overflow: hidden;
+  }
+  #main_footer {
+    position: absolute;   
+  }
+  
+}
+
